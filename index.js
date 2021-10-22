@@ -138,6 +138,8 @@ if (input != "=" && input != "C") {
         } else if(inputId == "modulo") {
             $("h1").text("%");   
         }
+    } else if(input == "+" || input == "-" || input == "+"){
+        $("h1").text(input);   
     } else {
         $("h1").text(newVal);   
     }
