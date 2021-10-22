@@ -21,16 +21,6 @@ h1, p {
     background-color: white;
     height: 100px;
 }
-.a {
-    background-color: rgb(223, 219, 219);    height: 100px;
-    width: 500px;
-    float: right;
-    position: absolute;
-    right: 312.5px;
-    bottom: 268px;
-    z-index: 5;
-}
-
 @media screen and (max-width: 420px) {
     .container {
         padding: 10% 20%;

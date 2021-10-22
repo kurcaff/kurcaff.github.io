@@ -17,25 +17,27 @@ $("button").click(function(){
 //Converting All Strings Into Numbers
 function numbers(input) {
     if(input == "1"){
-        newVal.push(1)
+        newVal += ("1")
     } else if(input == "2"){
-        newVal.push(2)
+        newVal += ("2")
     } else if(input == "3"){
-        newVal.push(3)
+        newVal += ("3")
     } else if(input == "4"){
-        newVal.push(4)
+        newVal += ("4")
     } else if(input == "5"){
-        newVal.push(5)
+        newVal += ("5")
     } else if(input == "6"){
-        newVal.push(6)
+        newVal += ("6")
     } else if(input == "7"){
-        newVal.push(7)
+        newVal += ("7")
     } else if(input == "8"){
-        newVal.push(8)
+        newVal += ("8")
     } else if(input == "9"){
-        newVal.push(9)
+        newVal += ("9")
     } else if(input == "0"){
-        newVal.push(0)
+        newVal += ("0")
+    } else if(input == "."){
+        newVal += (".")
     }
 }
 
@@ -78,23 +80,23 @@ function operators(input, inputId) {
 function logic(input) {
     if(input == "=" && prevVal.length >= 1 && newVal.length >= 1) {
         if (operatorVal[operatorVal.length -1] == "+") {
-            resultVal.push(prevVal[prevVal.length - 1] + newVal[newVal.length - 1])
+            resultVal.push(Number(prevVal) + Number(newVal))
             $("h1").text(resultVal)
             emptying()
         } else if (operatorVal[operatorVal.length -1] == "-") {
-            resultVal.push(prevVal[prevVal.length - 1] - newVal[newVal.length - 1])
+            resultVal.push(Number(prevVal) - Number(newVal))
             $("h1").text(resultVal)
             emptying()
         } else if (operatorVal[operatorVal.length -1] == "x") {
-            resultVal.push(prevVal[prevVal.length - 1] * newVal[newVal.length - 1])
+            resultVal.push(Number(prevVal) * Number(newVal))
             $("h1").text(resultVal)
             emptying()
         } else if (operatorVal[operatorVal.length -1] == "/") {
-            resultVal.push(prevVal[prevVal.length - 1] / newVal[newVal.length - 1])
+            resultVal.push(Number(prevVal) / Number(newVal))
             $("h1").text(resultVal)
             emptying()
         } else if (operatorVal[operatorVal.length -1] == "%") {
-            resultVal.push(prevVal[prevVal.length - 1] % newVal[newVal.length - 1])
+            resultVal.push(Number(prevVal) % Number(newVal))
             $("h1").text(resultVal)
             emptying()
         }
@@ -125,9 +127,9 @@ function emptying() {
 // Removing Unnecessary Text From Display
 function cleanText(input, inputId) {
 if (prevVal.length >= 1 && newVal.length >= 1 && operatorVal.length >= 1) {
-    $("p").text(prevVal[prevVal.length - 1] + " " + operatorVal[operatorVal.length - 1]  + " " + newVal[newVal.length - 1])
+    $("p").text(prevVal + " " + operatorVal[operatorVal.length - 1]  + " " + newVal)
     } else if(prevVal.length >= 1) {
-    $("p").text(prevVal[prevVal.length - 1])
+    $("p").text(prevVal)
 }
 if (input != "=" && input != "C") {
     if (input == 0) {
@@ -137,7 +139,7 @@ if (input != "=" && input != "C") {
             $("h1").text("%");   
         }
     } else {
-        $("h1").text(input);   
+        $("h1").text(newVal);   
     }
 }
 }
