@@ -132,7 +132,6 @@ if (prevVal.length >= 1 && newVal.length >= 1 && operatorVal.length >= 1) {
     $("p").text(prevVal)
 }
 if (input != "=" && input != "C") {
-    if (input == 0) {
         if(inputId == "divide") {
             $("h1").text("/");   
         } else if(inputId == "modulo") {
@@ -144,7 +143,6 @@ if (input != "=" && input != "C") {
         $("h1").text(newVal);   
     }
 }
-}
 
 //Try using number.input
 
@@ -152,4 +150,4 @@ if (input != "=" && input != "C") {
 
 //Try another event listener pushing in newVal2[] & add newVal + newVal2 
 
-// Sekoj input go sobira u string "22 + 33 - 33 % 3..."
+// Sekoj input go sobira u string "22+33-33%5..."
