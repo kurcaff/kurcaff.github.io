@@ -130,6 +130,7 @@ if (prevVal.length >= 1 && newVal.length >= 1 && operatorVal.length >= 1) {
     $("p").text(prevVal + " " + operatorVal[operatorVal.length - 1]  + " " + newVal)
     } else if(prevVal.length >= 1) {
     $("p").text(prevVal)
+    }
 }
 if (input != "=" && input != "C") {
     if (input == 0) {
@@ -144,7 +145,6 @@ if (input != "=" && input != "C") {
         }
     }
 }
-
 //Try using number.input
 
 //Try calculator can take more then one-digit numbers
