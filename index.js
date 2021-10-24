@@ -132,15 +132,16 @@ if (prevVal.length >= 1 && newVal.length >= 1 && operatorVal.length >= 1) {
     $("p").text(prevVal)
 }
 if (input != "=" && input != "C") {
+    if (input == 0) {
         if(inputId == "divide") {
             $("h1").text("/");   
         } else if(inputId == "modulo") {
             $("h1").text("%");   
-        }
-    } else if(input == "+" || input == "-" || input == "+"){
+        } else if(input == "+" || input == "-" || input == "+"){
         $("h1").text(input);   
-    } else {
+        } else {
         $("h1").text(newVal);   
+        }
     }
 }
 
@@ -150,4 +151,4 @@ if (input != "=" && input != "C") {
 
 //Try another event listener pushing in newVal2[] & add newVal + newVal2 
 
-// Sekoj input go sobira u string "22+33-33%5..."
+// Sekoj input go sobira u string "22+33-33%5...
