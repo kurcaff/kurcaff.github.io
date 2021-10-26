@@ -85,7 +85,7 @@ function logic(input) {
 
             var finalResult = Number(prevVal) + Number(newVal);
             var finalResultToString = String(finalResult);
-            var finalResultSliced = finalResultToString.slice(0, 10);
+            var finalResultSliced = finalResultToString.slice(0, 11);
             resultVal.push(Number(finalResultSliced))
             emptying()
 
@@ -93,7 +93,7 @@ function logic(input) {
 
             var finalResult = Number(prevVal) - Number(newVal);
             var finalResultToString = String(finalResult);
-            var finalResultSliced = finalResultToString.slice(0, 10);
+            var finalResultSliced = finalResultToString.slice(0, 11);
             resultVal.push(Number(finalResultSliced))
             emptying()
 
@@ -101,7 +101,7 @@ function logic(input) {
 
             var finalResult = Number(prevVal) * Number(newVal);
             var finalResultToString = String(finalResult);
-            var finalResultSliced = finalResultToString.slice(0, 10);
+            var finalResultSliced = finalResultToString.slice(0, 11);
             resultVal.push(Number(finalResultSliced))
             emptying()
 
@@ -109,7 +109,7 @@ function logic(input) {
 
             var finalResult = Number(prevVal) / Number(newVal);
             var finalResultToString = String(finalResult);
-            var finalResultSliced = finalResultToString.slice(0, 10);
+            var finalResultSliced = finalResultToString.slice(0, 11);
             resultVal.push(Number(finalResultSliced))
             emptying()
 
@@ -117,7 +117,7 @@ function logic(input) {
 
             var finalResult = Number(prevVal) % Number(newVal);
             var finalResultToString = String(finalResult);
-            var finalResultSliced = finalResultToString.slice(0, 10);
+            var finalResultSliced = finalResultToString.slice(0, 11);
             resultVal.push(Number(finalResultSliced))
             emptying()
         }
