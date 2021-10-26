@@ -80,20 +80,45 @@ function operators(input, inputId) {
 //Getting Result
 function logic(input) {
     if(input == "=" && prevVal.length >= 1 && newVal.length >= 1) {
+
         if (operatorVal[operatorVal.length -1] == "+") {
-            resultVal.push(Number(prevVal) + Number(newVal))
+
+            var finalResult = Number(prevVal) + Number(newVal);
+            var finalResultToString = String(finalResult);
+            var finalResultSliced = finalResultToString.slice(0, 10);
+            resultVal.push(Number(finalResultSliced))
             emptying()
+
         } else if (operatorVal[operatorVal.length -1] == "-") {
-            resultVal.push(Number(prevVal) - Number(newVal))
+
+            var finalResult = Number(prevVal) - Number(newVal);
+            var finalResultToString = String(finalResult);
+            var finalResultSliced = finalResultToString.slice(0, 10);
+            resultVal.push(Number(finalResultSliced))
             emptying()
+
         } else if (operatorVal[operatorVal.length -1] == "x") {
-            resultVal.push(Number(prevVal) * Number(newVal))
+
+            var finalResult = Number(prevVal) * Number(newVal);
+            var finalResultToString = String(finalResult);
+            var finalResultSliced = finalResultToString.slice(0, 10);
+            resultVal.push(Number(finalResultSliced))
             emptying()
+
         } else if (operatorVal[operatorVal.length -1] == "/") {
-            resultVal.push(Number(prevVal) / Number(newVal))
+
+            var finalResult = Number(prevVal) / Number(newVal);
+            var finalResultToString = String(finalResult);
+            var finalResultSliced = finalResultToString.slice(0, 10);
+            resultVal.push(Number(finalResultSliced))
             emptying()
+
         } else if (operatorVal[operatorVal.length -1] == "%") {
-            resultVal.push(Number(prevVal) % Number(newVal))
+
+            var finalResult = Number(prevVal) % Number(newVal);
+            var finalResultToString = String(finalResult);
+            var finalResultSliced = finalResultToString.slice(0, 10);
+            resultVal.push(Number(finalResultSliced))
             emptying()
         }
     }
@@ -173,13 +198,4 @@ function backspace (inputId) {
 
 //Try another event listener pushing in newVal2[] & add newVal + newVal2 
 
-// Sekoj input go sobira u string "22+33-33%5..."
-
-
-
-
-// if (prevVal.length > 12) {
-//     prevVal.slice(0, 10)
-//     newVal.slice(0, 10)
-
-// }
+// Sekoj input go sobira u string "22+33-33%10..."
