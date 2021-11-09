@@ -106,24 +106,6 @@ p {
     padding-bottom: 5%;
 }
 
-/* ///////////////////////////////////////////////////////////////////////////// */
-/* Testimonials */
-/* .testimonials {
-    background-color: #003870;
-    color: white;
-}
-.testimonials h1 {
-    padding-top: 1%;
-}
-.carousel-section {
-    padding: 1% 0 3%;
-    margin: auto;
-    color: black;
-}
-.testimonial-image {
-    height: 700px;
-    object-fit: cover;
-}*/
 .testimonials {
     text-align: left;
 } 
@@ -171,11 +153,11 @@ p {
     top: 43%;
     left: 30%;
     opacity: 0.0;
-    -webkit-transition: all 300ms ease-in-out;
-    -moz-transition: all 300ms ease-in-out;
-    -ms-transition: all 300ms ease-in-out;
-    -o-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 .image-div-btn:hover {
     background-color: #014f9e;
@@ -397,19 +379,13 @@ p {
         top: 15%;
         font-size: 22px;
     }
+    .image-text{
+        top: 5%;
+    }
 }
 @media screen and (max-width: 392px) {
-    .image-div-text {
+    .header-paragraph {
         
     }
 }
 
-/* position: absolute;
-    width: 50%;
-    top: 30%;
-    left: 25%;
-    color: white;
-    font-size: 25px;
-    font-weight: 900;
-    z-index: 2;
-    opacity: 0.0 */
