@@ -1,34 +1,415 @@
 body {
-    background-color: rgb(223, 219, 219);
+    margin: 0;
+    text-align: center;
 }
-h1, p {
-    text-align: right;
+h1 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+h3 {
+    font-weight: 700;
+}
+p {
+    font-family: 'Mulish', sans-serif;
+
+}
+/* Nav-bar */
+.header {
+    background-color: #003870;
+    padding: 20px 0;
+    position: fixed;
+    z-index: 10;
 }
 
-.container {
-    padding: 15% 28%;
+.navbar-brand {    
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
 }
 
-.btn {
-    border-radius: 0;
+.navbar-ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.nav-item {
+    padding-left: 40px;
 }
 
-.btn:hover {
-    background-color: rgb(235, 235, 235);
+/* ///////////////////////////////////////////////////////////////////////////// */
+.main {
+    padding-top: 126px;
+}
+/* First Section */
+.header-image {
+    width: 100%;
+    height: 800px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #003870);
+    right: 0;
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+}
+.first-section {
+    height: 800px;
+
+}
+.image-text{
+    position: relative;
+    top: 25%;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+.image-text-header {
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.image-text-btn {   
+    margin-top: 70px;
+    background-color: #003870;
+    color: white;
+    width: 250px;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding: 1%;
+}
+.image-text-btn:hover {
+    background-color: #014f9e;
+    color: white;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+/* Features */
+.features {
+    padding: 7% 0 5%;
+}
+.box {
+    padding: 5%;
+}
+.features-icon {
+    color: #003870;
+    margin-bottom: 2rem;
+}
+.features-header {
+    padding-bottom: 5%;
+    color: #003870;
+    font-size: 48px;
+}
+.features-h {
+    color: #003870;
+    margin-bottom: 1rem;
+}
+.features-p{
+    font-size: 18px;
+    padding-bottom: 5%;
 }
 
-.display {
-    background-color: white;
-    height: 100px;
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* Testimonials */
+/* .testimonials {
+    background-color: #003870;
+    color: white;
 }
-@media screen and (max-width: 420px) {
-    .container {
-        padding: 10% 20%;
-    }
-  }
-
-.clear, .multiply, .subtract, .add {
+.testimonials h1 {
+    padding-top: 1%;
+}
+.carousel-section {
+    padding: 1% 0 3%;
+    margin: auto;
+    color: black;
+}
+.testimonial-image {
+    height: 700px;
+    object-fit: cover;
+}*/
+.testimonials {
+    text-align: left;
+} 
+.image-div {
+    position: relative;
+    text-align: center;
+}
+.image-div:hover .image-div-btn {
+    opacity: 1.0;
+}
+.image-div:hover .image-div-text {
+    opacity: 1.0;
+}
+.image-div:hover .testimonial-image-one{
+    filter: opacity(0.5) drop-shadow(0 0 0 #003870);
+}
+.testimonial-image-one {
+    width: 100%;
+    border-radius: 1%;
+}
+.testimonial-image-two {
+    width: 100%;
+    border-radius: 1%;
+}
+.row-two {
+    margin-top: 5%;
+}
+.testimonials-paragraph {
     font-size: 22px;
 }
+.testimonials-header {
+    font-size: 48px;
+    line-height: 2;
+    color: #003870;
+}
+.image-div-btn {
+    background-color: #003870;;
+    color: white;
+    width: 40%;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: 700;
+    z-index: 2;
+    position: absolute;
+    top: 43%;
+    left: 30%;
+    opacity: 0.0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.image-div-btn:hover {
+    background-color: #014f9e;
+    color: white;
+}
+.image-div-text {
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    z-index: 2;
+    opacity: 0.0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* Footer */
+.footer{
+    padding: 5% 5% 0;
+}
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+.footer-col {
+    padding-bottom: 5%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* Apply now */
+.forms {
+    padding: 7% 0;
+    width: 50%;
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+}
+
+.required {
+    color: red;
+}
+
+.apply-now-col {
+    padding: 0 6% 3% 0;
+}
+.apply-now-btn {
+    position: relative;
+    right: 12px;
+    width: 200px;
+    background-color: #003870;
+    color: white;
+}
+.apply-now-btn:hover {
+    background-color: #014f9e;
+    color: white;
+}
+.forms-header {
+    padding-bottom: 10%;
+    text-align: center;
+    color: #003870;
+    font-size: 50px
+}
+.last-row {
+    padding-bottom: 2%;
+}
 
 
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+/* @media */
+@media screen and (max-width: 1400px) {
+    .testimonials-paragraph {
+        font-size: 18px;
+    }
+    .testimonials-header {
+        font-size: 38px;
+        line-height: 2;
+    }
+    .image-text-btn {
+        padding: 1.5%;
+    }
+    .image-div-text{
+        top: 22%
+    }
+}
+@media screen and (max-width: 1200px) {
+    .image-div-text{
+        width: 70%;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .dropdown-menu {
+        border: 1px solid #59981A;
+        width: 100%;
+        height: 80px;
+        color: white; 
+        background-color: #59981A;
+
+    }
+    .testimonial-image {
+        height: 400px;
+    }
+    .carousel-section {
+        padding: 0;
+    }
+    .nav-item {
+        padding-left: 0;
+        padding-top: 20px;
+
+    }
+    .contact-us-header {
+        padding-top: 20px;
+    }
+    .image-div-text{
+        width: 50%;
+        left: 25%;
+        top: 30%
+    }
+
+}
+
+@media screen and (max-width: 852px) {
+    .image-text {
+        font-size: 28px;
+        top: 5%;
+        padding-top: 50px;
+    }
+    .image-text-header {
+        font-size: 45px;
+    }
+    .testimonial-image {
+        height: 400px;
+    }
+    .header-image {
+        height: 600px;
+    }
+    .first-section {
+        height: 600px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 35px;
+    }
+    .testimonial-image {
+        height: 400px;
+    }
+    .main {
+        padding-top: 119px;
+    }
+    .image-text-btn {
+        padding: 2%;
+    }
+    .image-div-text {
+        top: 20%;
+        left: 27%;
+    }
+}
+@media screen and (max-width: 626px) {
+    .features-header {
+        font-size: 42px;
+    }
+    .features {
+        padding: 7% 7% 0;
+    }
+    
+}
+@media screen and (max-width: 528px) {
+    .navbar-brand {
+        font-size: 22px;
+    }
+    .testimonial-image {
+        height: 200px;
+    }
+    .testimonials-header {
+        font-size: 34px;
+    }
+    .forms {
+        width: 70%;
+    }
+    .last-row {
+        padding-bottom: 5%;
+    }
+    .image-text-btn {
+        margin-top: 30px;
+    }
+    .main {
+        padding-top: 99px;
+    }
+    .features-header {
+        font-size: 34px;
+    }
+    .image-div-text {
+        top: 20%;
+        left: 27%;
+    }
+    .image-div-text {
+        width: 70%;
+        left: 15%;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .features-header {
+        font-size: 28px;
+    }
+    .image-div-btn{
+        width: 50%;
+        top: 40%;
+        left: 27%;
+    }
+    .image-div-text {
+        top: 15%;
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 392px) {
+    .image-div-text {
+        
+    }
+}
+
+/* position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    z-index: 2;
+    opacity: 0.0 */
